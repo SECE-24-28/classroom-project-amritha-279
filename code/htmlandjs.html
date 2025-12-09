@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border{
+            border : 1px solid red;
+        }
+        .color{
+            color : red;
+        }
+        .background{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Heading One</h1>
+    <h1 class="c1">Heading Inside Class</h1>
+
+    <p class="c1">This is a paragraph with class c1</p>
+    <div class="c1">Div with class c1</div>
+
+    <p id="id1">This is an element with id = id1</p>
+
+    <script>
+        /* 
+        1. Get elements by TAG NAME (correct tag: h1)
+        let heading1 = document.getElementsByTagName("h1");
+        console.log("getElementsByTagName:", heading1);
+
+        // 2. Get elements by CLASS NAME
+        let c1 = document.getElementsByClassName("c1");
+        console.log("getElementsByClassName:", c1);
+
+        // 3. Get element by ID
+        let id1 = document.getElementById("id1");
+        console.log("getElementById:", id1);
+
+        // 4. querySelector (returns FIRST match)
+        let scl = document.querySelector(".c1");
+        console.log("querySelector:", scl);
+
+        // 5. querySelectorAll (returns ALL matches)
+        let d = document.querySelectorAll(".c1");
+        console.log("querySelectorAll:", d);
+
+        let head = document.querySelector(".c1");
+        console.log(head.textContent);
+        */
+
+        let head = document.querySelector(".c1");
+        head.textContent = "This is the new programming content";
+
+        let div = document.querySelector("div");
+        div.innerHTML = "Hello from HTML";
+
+        // Styling examples
+        head.classList.add("color");
+        div.classList.add("background", "border");
+
+        let ul = document.createElement("ul");
+
+        let li1 = document.createElement("li");
+        li1.textContent = "Item 1";
+        ul.appendChild(li1);
+
+        let li2 = document.createElement("li");
+        li2.textContent = "Item 2";
+        ul.appendChild(li2);
+
+        document.body.appendChild(ul);
+        
+    </script>
+
+</body>
+</html>

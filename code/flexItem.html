@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Example</title>
+    <style>
+        .flexContainer {
+    border: 1px solid red;
+    display: flex;
+    height: 100px;
+    gap: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.flexItem {
+    background-color: yellow;
+    border: 2px solid red;
+    color: red;
+    font-size: 20px;
+    height: 60px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="flexContainer">
+    <div class="flexItem">FlexItem</div>
+    <div class="flexItem">FlexItem</div>
+    <div class="flexItem">FlexItem</div>
+    <div class="flexItem">FlexItem</div>
+    <div class="flexItem">FlexItem</div>
+    <div class="flexItem">FlexItem</div>
+</div>
+
+</body>
+</html>
